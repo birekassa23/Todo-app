@@ -14,8 +14,7 @@ function TodoForm({ addTodo }) {
     e.preventDefault();
 
     // make sure no field is empty
-    if (!subject.trim() || !topic.trim() || !task.trim() || !time.trim())
-      return;
+    if (!topic.trim() || !task.trim() || !time.trim()) return;
 
     // send todo object to parent (App.js)
     addTodo({ subject, topic, task, time });
